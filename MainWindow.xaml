@@ -1,0 +1,58 @@
+﻿<Window x:Class="QuadrathlonCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuadrathlonCalculator"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="Quadrathlon Calculator" Height="460" Width="600">
+    <Canvas>
+        <Menu VerticalAlignment="Top" Width="600">
+            <MenuItem HorizontalAlignment="Left" VerticalAlignment="Top" Header="_Help" Click="help_Click" />
+        </Menu>
+
+        <GroupBox Header="Current Info" Height="115" Width="297" Canvas.Left="22" Canvas.Top="26"/>
+        <Label Content="Remaining Weeks:" Canvas.Left="40" Canvas.Top="52"/>
+        <ComboBox x:Name="cmbTime" Width="120" Canvas.Left="180" Canvas.Top="54">
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="1"/>
+        </ComboBox>
+        <Label Content="Current Points:" Canvas.Left="40" Canvas.Top="92"/>
+        <xctk:IntegerUpDown x:Name="intPoints" Canvas.Left="180" Canvas.Top="96" Value="0" Minimum="0" Maximum="1499" Width="120"/>
+
+        <GroupBox Header="Content Runners" Height="239" Width="297" Canvas.Left="22" Canvas.Top="171"/>
+        <Label Content="Pandemonium Rift" Canvas.Left="40" Canvas.Top="203"/>
+        <xctk:IntegerUpDown x:Name="intRift" Canvas.Left="180" Canvas.Top="207" Value="0" Minimum="0" Width="120"/>
+        <Label Content="Anton Raid" Canvas.Left="40" Canvas.Top="243"/>
+        <xctk:IntegerUpDown x:Name="intAnton" Canvas.Left="180" Canvas.Top="247" Value="0" Minimum="0" Width="120"/>
+        <Label Content="Luke Raid" Canvas.Left="40" Canvas.Top="283"/>
+        <xctk:IntegerUpDown x:Name="intLuke" Canvas.Left="180" Canvas.Top="287" Value="0" Minimum="0" Width="120"/>
+        <Label Content="Hard Luke Raid" Canvas.Left="40" Canvas.Top="323"/>
+        <ComboBox x:Name="cmbHard" Width="120" Canvas.Left="180" Canvas.Top="327">
+            <ComboBoxItem Content="0"/>
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+        </ComboBox>
+        <Label Content="The Beast" Canvas.Left="40" Canvas.Top="363"/>
+        <xctk:IntegerUpDown x:Name="intBeast" Canvas.Left="180" Canvas.Top="367" Text="0" Value="0" Minimum="0" Width="120"/>
+
+        <Button Content="Rift" Canvas.Left="350" Canvas.Top="40" Height="50" Width="100" Click="rift_Click"/>
+        <Button Content="Anton" Canvas.Left="475" Canvas.Top="40" Height="50" Width="100" Click="anton_Click"/>
+        <Button Content="Luke" Canvas.Left="350" Canvas.Top="100" Height="50" Width="100" Click="luke_Click"/>
+        <Button Content="Hard Luke" Canvas.Left="475" Canvas.Top="100" Height="50" Width="100" Click="hard_Click"/>
+        <Button Content="Beast" Canvas.Left="350" Canvas.Top="160" Height="50" Width="100" Click="beast_Click"/>
+        <Button Content="Reset" Canvas.Left="475" Canvas.Top="160" Height="50" Width="100" Click="reset_Click"/>
+
+        <GroupBox Header="Output" Height="177" Width="225" Canvas.Left="350" Canvas.Top="233">
+            <TextBlock x:Name="txtOutput" TextWrapping="Wrap" Height="120" Margin="0,0,9,0">
+                <Run Text="Awaiting input"/>
+            </TextBlock>
+        </GroupBox>
+
+
+    </Canvas>
+</Window>
