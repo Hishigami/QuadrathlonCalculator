@@ -6,8 +6,11 @@
         xmlns:local="clr-namespace:QuadrathlonCalculator"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
-        Title="Quadrathlon Calculator" Height="460" Width="600">
+        Title="Quadrathlon Calculator" Height="450" Width="600" ResizeMode="NoResize">
     <Canvas>
+        <Canvas.Background>
+            <ImageBrush ImageSource="images/lukeslab.png" Opacity="0.25"/>
+        </Canvas.Background>
         <Menu VerticalAlignment="Top" Width="600">
             <MenuItem HorizontalAlignment="Left" VerticalAlignment="Top" Header="_@HELP" Click="help_Click" />
         </Menu>
@@ -40,11 +43,36 @@
         <Label Content="The Beast" Canvas.Left="40" Canvas.Top="363"/>
         <xctk:IntegerUpDown x:Name="intBeast" Canvas.Left="180" Canvas.Top="367" Text="0" Value="0" Minimum="0" Width="120"/>
 
-        <Button Content="Rift" Canvas.Left="350" Canvas.Top="40" Height="50" Width="100" Click="rift_Click"/>
-        <Button Content="Anton" Canvas.Left="475" Canvas.Top="40" Height="50" Width="100" Click="anton_Click"/>
-        <Button Content="Luke" Canvas.Left="350" Canvas.Top="100" Height="50" Width="100" Click="luke_Click"/>
-        <Button Content="Hard Luke" Canvas.Left="475" Canvas.Top="100" Height="50" Width="100" Click="hard_Click"/>
-        <Button Content="Beast" Canvas.Left="350" Canvas.Top="160" Height="50" Width="100" Click="beast_Click"/>
+        <Button Canvas.Left="350" Canvas.Top="40" Height="50" Width="100" Click="rift_Click">
+            <StackPanel>
+                <Image Source="/images/turiel.png" Height="25" Width="25"/>
+                <Label Padding="0" Content="Rift" HorizontalContentAlignment="Center"/>
+            </StackPanel>
+        </Button>
+        <Button Canvas.Left="475" Canvas.Top="40" Height="50" Width="100" Click="anton_Click">
+            <StackPanel>
+                <Image Source="/images/anton.png" Height="25" Width="25"/>
+                <Label Padding="0">Anton</Label>
+            </StackPanel>
+        </Button>
+        <Button Canvas.Left="350" Canvas.Top="100" Height="50" Width="100" Click="luke_Click">
+            <StackPanel>
+                <Image Source="/images/luke.png" Height="25" Width="25"/>
+                <Label Padding="0">Luke</Label>
+            </StackPanel>
+        </Button>
+        <Button Canvas.Left="475" Canvas.Top="100" Height="50" Width="100" Click="hard_Click">
+            <StackPanel>
+                <Image Source="/images/twilight.png" Height="25" Width="25"/>
+                <Label Padding="0">Hard Luke</Label>
+            </StackPanel>
+        </Button>
+        <Button Canvas.Left="350" Canvas.Top="160" Height="50" Width="100" Click="beast_Click">
+            <StackPanel>
+                <Image Source="/images/beast.png" Height="25" Width="25"/>
+                <Label Padding="0">Beast</Label>
+            </StackPanel>
+        </Button>
         <Button Foreground="Red" Canvas.Left="475" Canvas.Top="160" Height="50" Width="100" Click="reset_Click">
             <TextBlock><Bold>Reset</Bold></TextBlock>
         </Button>

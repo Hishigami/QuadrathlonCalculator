@@ -7,7 +7,37 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="images\anton.png" />
+    <None Remove="images\beast.png" />
+    <None Remove="images\luke.png" />
+    <None Remove="images\lukeslab.png" />
+    <None Remove="images\turiel.png" />
+    <None Remove="images\twilight.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Extended.Wpf.Toolkit" Version="4.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="images\anton.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\beast.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\luke.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\lukeslab.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\turiel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\twilight.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
