@@ -9,7 +9,7 @@
         Title="Quadrathlon Calculator" Height="460" Width="600">
     <Canvas>
         <Menu VerticalAlignment="Top" Width="600">
-            <MenuItem HorizontalAlignment="Left" VerticalAlignment="Top" Header="_Help" Click="help_Click" />
+            <MenuItem HorizontalAlignment="Left" VerticalAlignment="Top" Header="_@HELP" Click="help_Click" />
         </Menu>
 
         <GroupBox Header="Current Info" Height="115" Width="297" Canvas.Left="22" Canvas.Top="26"/>
@@ -45,11 +45,12 @@
         <Button Content="Luke" Canvas.Left="350" Canvas.Top="100" Height="50" Width="100" Click="luke_Click"/>
         <Button Content="Hard Luke" Canvas.Left="475" Canvas.Top="100" Height="50" Width="100" Click="hard_Click"/>
         <Button Content="Beast" Canvas.Left="350" Canvas.Top="160" Height="50" Width="100" Click="beast_Click"/>
-        <Button Content="Reset" Canvas.Left="475" Canvas.Top="160" Height="50" Width="100" Click="reset_Click"/>
+        <Button Foreground="Red" Canvas.Left="475" Canvas.Top="160" Height="50" Width="100" Click="reset_Click">
+            <TextBlock><Bold>Reset</Bold></TextBlock>
+        </Button>
 
         <GroupBox Header="Output" Height="177" Width="225" Canvas.Left="350" Canvas.Top="233">
-            <TextBlock x:Name="txtOutput" TextWrapping="Wrap" Height="120" Margin="0,0,9,0">
-                <Run Text="Awaiting input"/>
+            <TextBlock x:Name="txtOutput" TextWrapping="Wrap" Height="148" Margin="0,0,-2,0">
             </TextBlock>
         </GroupBox>
 

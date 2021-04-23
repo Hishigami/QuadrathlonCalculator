@@ -78,8 +78,8 @@ namespace QuadrathlonCalculator
             //Blanket null value check
             if (intPoints.Value == null || intRift.Value == null || intAnton.Value == null || intLuke == null || intBeast == null)
             {
-                MessageBox.Show("A blank field was detected.\n" +
-                    "Please fill in the blank(s) with a value.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                txtOutput.Text = ("A blank field was detected.\n" +
+                    "Please fill in the blank(s) with a value.");
                 return;
             }
             
@@ -167,16 +167,18 @@ namespace QuadrathlonCalculator
             intLuke.Value = 0;
             cmbHard.SelectedIndex = 0;
             intBeast.Value = 0;
+
+            txtOutput.Text = ("All fields have been reset to their defaults.");
         }
 
         //Bring up help
         private void help_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Enter your points and remaining time, then fill in 4 of the content runner fields " +
-                "before clicking on the content you want to calculate characters for.\n" +
-                "All runs are assumed to be successful and run up to their daily/weekly limits.\n" +
-                "When in doubt, run an extra character from the program's output.\n" +
-                "Based on DFOG's Queen of Skardi's Quadrathlon event.", "@HELP", MessageBoxButton.OK, MessageBoxImage.Information);
+            txtOutput.Text = ("Enter your points, remaining time, and four of the content runners " +
+                "before calculating characters for target content.\n" +
+                "Runs are assumed to be successful and max out their daily/weekly limits.\n" +
+                "When in doubt, run another character into content.\n" +
+                "Based on DFOG's Queen of Skardi's Quadrathlon event.");
         }
     }
 }
