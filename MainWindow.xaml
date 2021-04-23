@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:QuadrathlonCalculator"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
-        Title="Quadrathlon Calculator" Height="450" Width="600" ResizeMode="NoResize">
+        Title="Quadrathlon Calculator" Height="450" Width="600" ResizeMode="NoResize" Icon=".\icon.ico">
     <Canvas>
         <Canvas.Background>
             <ImageBrush ImageSource="images/lukeslab.png" Opacity="0.25"/>
