@@ -177,7 +177,7 @@ namespace QuadrathlonCalculator
             txtOutput.Text = ("Enter your points, remaining time, and four of the content runners " +
                 "before calculating characters for target content.\n" +
                 "Runs are assumed to be successful and max out their daily/weekly limits.\n" +
-                "When in doubt, run another character into content.\n" +
+                "When in doubt, run another character into any content.\n" +
                 "Based on DFOG's Queen of Skardi's Quadrathlon event.");
         }
     }

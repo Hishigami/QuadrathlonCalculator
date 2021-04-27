@@ -24,15 +24,19 @@
             <ComboBoxItem Content="1"/>
         </ComboBox>
         <Label Content="Current Points:" Canvas.Left="40" Canvas.Top="92"/>
-        <xctk:IntegerUpDown x:Name="intPoints" Canvas.Left="180" Canvas.Top="96" Value="0" Minimum="0" Maximum="1499" Width="120"/>
+        <xctk:IntegerUpDown x:Name="intPoints" Canvas.Left="180" Canvas.Top="96" Value="0" Minimum="0" Maximum="1499" Width="120"
+                            DefaultValue="0" DisplayDefaultValueOnEmptyText="True"/>
 
         <GroupBox Header="Content Runners" Height="239" Width="297" Canvas.Left="22" Canvas.Top="171"/>
         <Label Content="Pandemonium Rift" Canvas.Left="40" Canvas.Top="203"/>
-        <xctk:IntegerUpDown x:Name="intRift" Canvas.Left="180" Canvas.Top="207" Value="0" Minimum="0" Width="120"/>
+        <xctk:IntegerUpDown x:Name="intRift" Canvas.Left="180" Canvas.Top="207" Value="0" Minimum="0" Width="120" DefaultValue="0"
+                            DisplayDefaultValueOnEmptyText="True"/>
         <Label Content="Anton Raid" Canvas.Left="40" Canvas.Top="243"/>
-        <xctk:IntegerUpDown x:Name="intAnton" Canvas.Left="180" Canvas.Top="247" Value="0" Minimum="0" Width="120"/>
+        <xctk:IntegerUpDown x:Name="intAnton" Canvas.Left="180" Canvas.Top="247" Value="0" Minimum="0" Width="120" DefaultValue="0"
+                            DisplayDefaultValueOnEmptyText="True"/>
         <Label Content="Luke Raid" Canvas.Left="40" Canvas.Top="283"/>
-        <xctk:IntegerUpDown x:Name="intLuke" Canvas.Left="180" Canvas.Top="287" Value="0" Minimum="0" Width="120"/>
+        <xctk:IntegerUpDown x:Name="intLuke" Canvas.Left="180" Canvas.Top="287" Value="0" Minimum="0" Width="120" DefaultValue="0"
+                            DisplayDefaultValueOnEmptyText="True"/>
         <Label Content="Hard Luke Raid" Canvas.Left="40" Canvas.Top="323"/>
         <ComboBox x:Name="cmbHard" Width="120" Canvas.Left="180" Canvas.Top="327">
             <ComboBoxItem Content="0"/>
@@ -41,7 +45,8 @@
             <ComboBoxItem Content="3"/>
         </ComboBox>
         <Label Content="The Beast" Canvas.Left="40" Canvas.Top="363"/>
-        <xctk:IntegerUpDown x:Name="intBeast" Canvas.Left="180" Canvas.Top="367" Text="0" Value="0" Minimum="0" Width="120"/>
+        <xctk:IntegerUpDown x:Name="intBeast" Canvas.Left="180" Canvas.Top="367" Text="0" Value="0" Minimum="0" Width="120" DefaultValue="0"
+                            DisplayDefaultValueOnEmptyText="True"/>
 
         <Button Canvas.Left="350" Canvas.Top="40" Height="50" Width="100" Click="rift_Click">
             <StackPanel>
