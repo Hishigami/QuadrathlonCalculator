@@ -4,6 +4,7 @@
 	<NoWarn>NU1701</NoWarn>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
+	<SatelliteResourceLanguages>en-US</SatelliteResourceLanguages>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>icon.ico</ApplicationIcon>
   </PropertyGroup>
